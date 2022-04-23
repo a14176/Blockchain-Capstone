@@ -11,7 +11,8 @@ Using the ERC-721 Non-Fungible Token Standard Contract, this project uses the NF
 > npm install
 > touch ./eth-contracts/.secret
 ```
-Append the wallet secret key(words phrase) into `.secret` 
+I used the local truffle for compile and testing which means .secret wasn't neccessary until I deployed to the Rinkeby network. 
+Append your wallet secret key(words phrase) into `.secret` 
 
 ## Deployment
 
@@ -33,7 +34,7 @@ or
 ## Implement Zokrates using a docker container
 
 ```shell
-> docker run -v /Users/nicka/dev/BlockchainUdacity/Blockchain-Capstone/zokrates/code/square:/home/zokrates/code -ti zokrates/zokrates /bin/bash
+> docker run -v ./zokrates/code/square:/home/zokrates/code -ti zokrates/zokrates /bin/bash
 
 > zokrates compile -i square.code
 > zokrates setup
@@ -66,7 +67,7 @@ node mint.js
 ```
 
 ## Smart Contract Deployed on rinkeby
-0x0000000000000000000000000000000000000000000000000000000000000009,0x0000000000000000000000000000000000000000000000000000000000000001
+
 #### 'Verifier'
    > transaction hash:    [0x6901d968d23629fe9f4d7ec4d00879846ec6aaab372d2cd3a481619f3394eb1b](https://rinkeby.etherscan.io/tx/0x6901d968d23629fe9f4d7ec4d00879846ec6aaab372d2cd3a481619f3394eb1b)<br/>
    > contract address:    [0x34ca13497Cc1D91f1C36d1c52F94Db721b3f8D16](https://rinkeby.etherscan.io/address/0x34ca13497Cc1D91f1C36d1c52F94Db721b3f8D16)<br/>
